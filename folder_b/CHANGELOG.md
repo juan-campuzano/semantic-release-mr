@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/juan-campuzano/semantic-release-mr/compare/folder_b_v1.1.0...folder_b_v1.2.0) (2026-01-22)
+
+
+### Features
+
+* **folder_a:** update index.ts ([998f4ed](https://github.com/juan-campuzano/semantic-release-mr/commit/998f4ed46460bc1052aa47a098d0e1617fae125e))
+* **folder_b:** update index.ts ([a5ef559](https://github.com/juan-campuzano/semantic-release-mr/commit/a5ef559822de4b3fe5ca83fad3e3997d7f64d898))
+* **folder_c:** update index.ts ([c95a06a](https://github.com/juan-campuzano/semantic-release-mr/commit/c95a06a4afc95e083bb7fcf2c2a4c9db3504241d))
+
 # [1.1.0](https://github.com/juan-campuzano/semantic-release-mr/compare/folder_b_v1.0.0...folder_b_v1.1.0) (2026-01-22)
 
 
