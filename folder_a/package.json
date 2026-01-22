@@ -6,6 +6,10 @@
     "author": "jcampuza",
     "type": "commonjs",
     "main": "index.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/juan-campuzano/semantic-release-mr.git"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     }

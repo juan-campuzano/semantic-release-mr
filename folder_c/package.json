@@ -1,4 +1,8 @@
 {
     "version": "1.0.0",
-    "name": "folder_c"
+    "name": "folder_c",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/juan-campuzano/semantic-release-mr.git"
+    }
 }
