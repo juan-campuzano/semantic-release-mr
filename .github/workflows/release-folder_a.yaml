@@ -1,0 +1,41 @@
+name: Release folder_a
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'folder_a/**'
+
+permissions:
+  contents: write # Required for creating tags and releases
+  issues: write # Required for commenting on issues
+  pull-requests: write # Required for commenting on PRs
+  id-token: write
+
+jobs:
+  release:
+    name: Release folder_a
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required for semantic-release to analyze commits
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install --no-progress --no-audit --no-fund
+        working-directory: folder_a
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx semantic-release
+        working-directory: folder_a
