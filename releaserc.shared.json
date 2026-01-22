@@ -47,5 +47,6 @@
                 "message": "chore: ${nextRelease.version} [skip ci]"
             }
         ]
-    ]
+    ],
+    "extends": "semantic-release-monorepo"
 }
