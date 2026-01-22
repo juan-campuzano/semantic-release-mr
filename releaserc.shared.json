@@ -1,0 +1,51 @@
+{
+    "branches": [
+        "main",
+        "master"
+    ],
+    "plugins": [
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "preset": "conventionalcommits",
+                "releaseRules": [
+                    {
+                        "type": "feat",
+                        "release": "minor"
+                    },
+                    {
+                        "type": "fix",
+                        "release": "patch"
+                    },
+                    {
+                        "type": "perf",
+                        "release": "patch"
+                    },
+                    {
+                        "breaking": true,
+                        "release": "major"
+                    }
+                ]
+            }
+        ],
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        [
+            "@semantic-release/exec",
+            {
+                "verifyReleaseCmd": "echo ${nextRelease.version} > version.txt",
+                "prepareCmd": "sed -i 's/\"version\": \"[^\"]*\"/\"version\": \"${nextRelease.version}\"/' package.json && git add package.json"
+            }
+        ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "version.txt",
+                    "CHANGELOG.md"
+                ],
+                "message": "chore: ${nextRelease.version} [skip ci]"
+            }
+        ]
+    ]
+}
