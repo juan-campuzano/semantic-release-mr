@@ -43,12 +43,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: "npm"
-          cache-dependency-path: ${{ matrix.package }}/package-lock.json
 
       - name: Install dependencies
         if: steps.changes.outputs.package == 'true'
-        run: npm ci --no-audit --no-fund
+        run: npm install --no-progress --no-audit --no-fund
         working-directory: ${{ matrix.package }}
 
       - name: Release
