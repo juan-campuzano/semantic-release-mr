@@ -47,7 +47,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.changes.outputs.package == 'true'
-        run: npm ci
+        run: npm install
         working-directory: ${{ matrix.package }}
 
       - name: Release
