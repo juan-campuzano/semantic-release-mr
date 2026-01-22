@@ -6,5 +6,5 @@
 export const name = 'folder_b';
 
 export function greet(): string {
-  return `Hello from ${name}! folderb`;
+  return `Hello from ${name}! folder`;
 }
