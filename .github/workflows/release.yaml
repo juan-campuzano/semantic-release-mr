@@ -46,7 +46,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.changes.outputs.package == 'true'
-        run: npm install --no-progress --no-audit --no-fund
+        run: npm ci --no-progress --no-audit --no-fund
         working-directory: ${{ matrix.package }}
 
       - name: Release
