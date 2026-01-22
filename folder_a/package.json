@@ -1,15 +1,16 @@
 {
     "name": "folder_a",
     "version": "1.0.0",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/juan-campuzano/semantic-release-mr.git"
+    },
     "description": "This is folder_a in the semantic-release-mr monorepo.",
     "license": "ISC",
     "author": "jcampuza",
     "type": "commonjs",
     "main": "index.ts",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/juan-campuzano/semantic-release-mr.git"
-    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     }
