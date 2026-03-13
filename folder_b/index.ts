@@ -4,7 +4,7 @@
  */
 
 export const name = 'folder_b';
-export const lastName = 'hola';
+export const lastName = 'chao';
 
 export function greet(): string {
   return `Hello from ${name}! folder b`;
