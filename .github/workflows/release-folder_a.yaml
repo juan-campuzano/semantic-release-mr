@@ -1,12 +1,7 @@
 name: Release folder_a
 
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - 'folder_a/**'
+  workflow_dispatch:
 
 permissions:
   contents: write # Required for creating tags and releases
