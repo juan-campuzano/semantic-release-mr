@@ -39,4 +39,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.0.0 (2026-03-13)
+
+
+### Features
+
+* add semantic-release dependencies ([a9ab97d](https://github.com/juan-campuzano/semantic-release-mr/commit/a9ab97dcd62143a93d8134986aaea792105bc7d8))
+* create releaserc config files ([dfc3d00](https://github.com/juan-campuzano/semantic-release-mr/commit/dfc3d00f7202cfe0abfd0649e6d4c7a953e4cb08))
+* **folder_c:** update index.ts ([c95a06a](https://github.com/juan-campuzano/semantic-release-mr/commit/c95a06a4afc95e083bb7fcf2c2a4c9db3504241d))
+* **folder_c:** update index.ts ([72d2615](https://github.com/juan-campuzano/semantic-release-mr/commit/72d2615a99e99861fb85c848dc71b1a20cd8a182))
+
+
+### Bug Fixes
+
+* revert vars ([3b03a54](https://github.com/juan-campuzano/semantic-release-mr/commit/3b03a54d9f71f5429d3411ce83f1c1ffebea5f4e))
+
 ## [Unreleased]
