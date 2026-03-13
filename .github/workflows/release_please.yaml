@@ -23,4 +23,5 @@ jobs:
       - uses: googleapis/release-please-action@v4
         with:
           release-type: node
+          include-component-in-tag: true
           path: ${{ matrix.path }}
