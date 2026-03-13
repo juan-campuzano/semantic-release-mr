@@ -48,4 +48,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0](https://github.com/juan-campuzano/semantic-release-mr/compare/v1.4.0...v1.5.0) (2026-03-13)
+
+
+### Features
+
+* add var ([22777a0](https://github.com/juan-campuzano/semantic-release-mr/commit/22777a020da0083b426fb43214fd5b85a1aed661))
+* add var ([91efe46](https://github.com/juan-campuzano/semantic-release-mr/commit/91efe46147fb2834abe10dd22bd41b1e6709bffc))
+
 ## [Unreleased]
