@@ -13,8 +13,14 @@ name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        path:
+          - folder_a
+          - folder_b
+          - folder_c
     steps:
       - uses: googleapis/release-please-action@v4
         with:
           release-type: node
-          path: 'folder_a'
+          path: ${{ matrix.path }}
